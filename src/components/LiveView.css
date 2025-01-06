@@ -1,0 +1,72 @@
+/* Container for the live view */
+.live-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading style */
+  .live-view-container h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Readings card style */
+  .readings-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Individual reading styling */
+  .readings-card p {
+    font-size: 1.2rem;
+    color: black; /* Updated to black */
+    margin: 10px 0;
+  }
+  
+  /* Strong text for labels */
+  .readings-card strong {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  /* Warning message styling */
+  .warning-message {
+    padding: 10px;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .live-view-container h2 {
+        font-size: 1.8rem;
+    }
+  
+    .readings-card p {
+        font-size: 1rem;
+    }
+  }

@@ -1,0 +1,166 @@
+/* Appliance Management Container */
+.appliance-management-container {
+    padding: 40px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(230, 227, 227, 0.1);
+    width: 100%; /* Ensure it takes up full width on smaller screens */
+  }
+  
+  /* Heading styles */
+  .appliance-management-container h2,
+  .appliance-management-container h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .appliance-management-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .appliance-management-form input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+  }
+  
+  .appliance-management-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Make button full-width on mobile */
+  }
+  
+  .appliance-management-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Appliance List */
+  .appliance-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .appliance-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    background-color: #e0e0e0; /* Light grey background */
+    color: #333; /* Dark text color */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .appliance-list li button {
+    padding: 5px 8px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 35%; /* Button width adjusted for small screens */
+    margin-left: 5px;
+  }
+  
+  .appliance-list li button:hover {
+    background-color: #e53935;
+  }
+  
+  .appliance-list li button.edit {
+    background-color: #ffa500;
+  }
+  
+  .appliance-list li button.edit:hover {
+    background-color: #ff8c00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Adjust container for smaller screens */
+    .appliance-management-container {
+      padding: 20px;
+      margin: 10px;
+      max-width: 100%;
+    }
+  
+    /* Adjust form input styles */
+    .appliance-management-form input {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .appliance-management-form button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    /* Stack appliance list items vertically for smaller screens */
+    .appliance-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .appliance-list li button {
+      width: 100%; /* Make buttons full width */
+      margin-top: 10px; /* Add space between buttons */
+    }
+  
+    .appliance-list li button.edit {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjust container and form for very small screens */
+    .appliance-management-container {
+      padding: 15px;
+      margin: 5px;
+    }
+  
+    .appliance-management-form input {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .appliance-management-form button {
+      font-size: 12px;
+      padding: 7px 12px;
+    }
+  
+    .appliance-list li {
+      padding: 8px;
+    }
+  
+    .appliance-list li button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  
+    .appliance-list li button.edit {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }

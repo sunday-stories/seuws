@@ -1,0 +1,180 @@
+/* Container for Smart Plug View */
+.smart-plug-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50, #3498db); /* Gradient from dark blue to light blue */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white; /* Text color for contrast against the background */
+}
+
+/* Heading style */
+.smart-plug-container h1 {
+  font-size: 2.5rem;
+  color: #fff; /* White color for the heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Form Styling */
+.device-details-form {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white for slight contrast */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Form Label Styles */
+.device-details-form label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Form Input Styles */
+.device-details-form input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: black; /* Set input text color to black */
+}
+
+.device-details-form input:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #ffffff; /* Change background to white when focused */
+}
+
+/* Submit Button */
+.device-details-form button {
+  padding: 10px 20px;
+  background-color: #1abc9c; /* Teal color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.device-details-form button:hover {
+  background-color: #16a085; /* Darker teal for hover effect */
+}
+
+/* Calculated Current Display */
+.calculated-current {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Readings card styling */
+.readings-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px; /* Slightly more rounded for modern feel */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for better depth */
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Individual reading styling */
+.readings-card p {
+  font-size: 1.3rem;
+  margin: 12px 0;
+  color: #2c3e50; /* Darker text for better readability */
+}
+
+/* Strong text for labels */
+.readings-card strong {
+  font-weight: bold;
+  color: #1abc9c; /* Soft teal for labels to stand out */
+}
+
+/* Loading message style */
+.loading-message {
+  font-size: 1.2rem;
+  color: #f39c12;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Fault Message */
+.fault-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Message */
+.success-message {
+  color: #2ecc71;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(46, 204, 113, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .smart-plug-container h1 {
+    font-size: 2rem;
+  }
+
+  .readings-card p {
+    font-size: 1.1rem;
+  }
+
+  .device-details-form {
+    width: 100%; /* Make form fit smaller screens */
+  }
+
+  .device-details-form input {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .device-details-form button {
+    font-size: 0.9rem; /* Adjust button size */
+  }
+}
