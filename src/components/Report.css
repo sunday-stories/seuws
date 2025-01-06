@@ -1,0 +1,120 @@
+.report-container {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.report-details {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.cost-section,
+.usage-status,
+.over-usage-status,
+.fault-status {
+  margin-bottom: 25px;
+}
+
+.fault-status {
+  background-color: #e74c3c; /* Darker red for more emphasis */
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fault-status:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #fff; /* White list items */
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+.usage-status,
+.over-usage-status {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 15px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.usage-status p,
+.over-usage-status p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.usage-status {
+  background-color: #eaf1f1; /* Light cyan for normal usage */
+}
+
+.over-usage-status {
+  background-color: #fbe3e4; /* Light pink for over usage */
+}
+
+@media (max-width: 768px) {
+  .report-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .fault-status {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

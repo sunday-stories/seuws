@@ -1,0 +1,51 @@
+/* Billing container */
+.billing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f0f0, #dfe6e9);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+/* Heading style */
+.billing-container h1 {
+  font-size: 2rem;
+  color: #16a085;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Billing details container */
+.billing-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Billing information text */
+.billing-details p {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+/* Strong text for labels */
+.billing-details strong {
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* Bill amount styling */
+.billing-details p:last-child {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
