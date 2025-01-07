@@ -20,7 +20,7 @@ const HomePage = () => {
                 <button onClick={() => navigate("/appliance-management")}>Manage Appliances</button>
                 <button onClick={() => navigate("/inverter-details")}>Inverter Details</button>
                 <button onClick={() => navigate("/billing")}>Billing</button>
-                <button onClick={() => navigate("/report")}>Generate Report</button> {/* New Report Button */}
+                <button onClick={() => navigate("/report")}>Energy Report</button> {/* New Report Button */}
             </div>
 
             <div className="energy-consumption">
