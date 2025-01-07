@@ -1,86 +1,188 @@
 .inverter-details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 45px;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inverter-details-container h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  margin-bottom: 8px;
+  display: block;
+  color: #ecf0f1;
+  width: 100%;
+  max-width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: clamp(6px, 2vw, 8px);
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  box-sizing: border-box;
+}
+
+.device-input {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 90%;
+}
+
+button {
+  padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 20px);
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+.devices-list {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.device-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: clamp(8px, 2vw, 15px);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.device-item p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.device-item button {
+  margin: 2px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.devices-list p {
+  margin: 3px 0;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  color: #bdc3c7;
+}
+
+.calculate-button {
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+.backup-time {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+
+.backup-time h2 {
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.backup-time p {
+  font-size: clamp(1rem, 3.5vw, 1.1rem);
+  color: #ecf0f1;
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 480px) {
+  .device-item {
+      padding: 10px;
   }
   
-  .inverter-details-container h1 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 15px;
+  .device-item button {
+      width: 100%;
+      margin: 3px 0;
   }
-  
-  label {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    display: block;
-    color: #ecf0f1;
-  }
-  
-  input {
-    width: 100%;
-    max-width: 280px;
-    padding: 8px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .device-input {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 15px;
+      max-width: 80%;
   }
   
-  button {
-    padding: 8px 15px;
-    background-color: #1abc9c;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  .device-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
   }
   
-  button:hover {
-    background-color: #16a085;
+  .device-item button {
+      width: auto;
+  }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 769px) {
+  .device-input {
+      flex-direction: row;
+      max-width: 800px;
+      gap: 20px;
+      align-items: flex-end;
   }
   
-  .devices-list {
-    margin-top: 15px;
-    text-align: center;
+  .device-input label {
+      flex: 1;
+      margin-bottom: 0;
   }
   
-  .devices-list p {
-    margin: 3px 0;
-    font-size: 1rem;
-    color: #bdc3c7;
+  .device-input button {
+      width: auto;
+      white-space: nowrap;
+      margin-bottom: 8px;
+  }
+  
+  .device-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+  }
+  
+  .device-item button {
+      width: auto;
+      min-width: 80px;
   }
   
   .calculate-button {
-    margin-top: 15px;
+      max-width: 300px;
   }
-  
-  .backup-time {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  .backup-time h2 {
-    font-size: 1.3rem;
-    color: #f1c40f;
-  }
-  
-  .backup-time p {
-    font-size: 1.1rem;
-    color: #ecf0f1;
-  }
+}
